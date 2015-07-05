@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="emp_manage_sys" extends="struts-default">
+
+		<!-- ログイン画面へのアクションノード -->
+		<action name="index" class="org.apache.struts.action.LoginAction"
+			method="input">
+			<result name="input">/login.jsp</result>
+		</action>
+
+		<!-- ログイン処理のアクションノード -->
+		<action name="login" class="org.apache.struts.action.LoginAction"
+			method="execute">
+			<!-- ログイン処理に失敗した場合、ログイン画面へリダイレクト -->
+			<result name="input">/login.jsp</result>
+			<!-- ログイン処理に成功した場合、ホーム画面へリダイレクト -->
+			<result name="success">/home.jsp</result>
+		</action>
+
+	</package>
+</struts>
