@@ -12,13 +12,6 @@ public interface EmployeeDataService {
 	Employee getEmployee();
 
 	/**
-	 * 社員モデルオブジェクトのセッタ
-	 *
-	 * @param employee
-	 */
-	void setEmployee(Employee employee);
-
-	/**
 	 * 社員データを取得するメソッド
 	 */
 	void loadEmployeeData();
