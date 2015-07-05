@@ -14,6 +14,7 @@
 
 <p>
 <!-- ログイン処理のエラーメッセージはココに追加してください -->
+<s:property value="loginErrorMessage"></s:property>
 </p>
 
 <!-- ログインフォーム -->

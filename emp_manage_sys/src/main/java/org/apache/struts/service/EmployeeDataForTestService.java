@@ -4,19 +4,29 @@ import java.sql.Date;
 
 import org.apache.struts.model.Employee;
 
-public class EmployeeDataForTest implements EmployeeDataService {
+public class EmployeeDataForTestService implements EmployeeDataService {
 
+	// 社員オブジェクト
 	private Employee employeeBean;
 
-	public EmployeeDataForTest() {
+	/**
+	 * コンストラクタ
+	 */
+	public EmployeeDataForTestService() {
 		employeeBean = new Employee();
 	}
 
+	/**
+	 * 社員オブジェクトのゲッタ
+	 */
 	@Override
 	public Employee getEmployee() {
 		return employeeBean;
 	}
 
+	/**
+	 * 社員データの取得メソッド
+	 */
 	@Override
 	public void loadEmployeeData() {
 		// このメソッドでデータの読み込みを行う
