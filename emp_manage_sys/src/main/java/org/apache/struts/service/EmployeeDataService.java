@@ -14,5 +14,5 @@ public interface EmployeeDataService {
 	/**
 	 * 社員データを取得するメソッド
 	 */
-	void loadEmployeeData();
+	void loadEmployeeData(String id);
 }

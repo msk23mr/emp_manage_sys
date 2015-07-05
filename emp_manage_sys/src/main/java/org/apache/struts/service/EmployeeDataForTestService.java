@@ -28,7 +28,7 @@ public class EmployeeDataForTestService implements EmployeeDataService {
 	 * 社員データの取得メソッド
 	 */
 	@Override
-	public void loadEmployeeData() {
+	public void loadEmployeeData(String id) {
 		// このメソッドでデータの読み込みを行う
 		// 一人分の社員データだけ読み込む
 

@@ -27,8 +27,7 @@ public class LoginAction extends ActionSupport {
 		// ココにログイン処理を書きます
 
 		// 社員データの取得
-		// 社員IDを基にデータを取得した方がいい
-		employeeDataService.loadEmployeeData();
+		employeeDataService.loadEmployeeData(employeeBean.getId());
 
 		// ログインフォームに入力されたパスワードと取得したパスワードの比較
 		if (employeeBean.getPassword().equals(
